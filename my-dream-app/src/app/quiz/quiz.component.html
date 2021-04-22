@@ -1,4 +1,4 @@
 <div>
     <button [ngClass]="[btnStyle]" (click)="onLikeClick()" name="like">{{likeText}}</button>
-    <button [ngClass]="[btnStyle2]" (click)="onDisLikeClick()" name="dislike">{{disLikeText}}</button>
+    <button [ngClass]="[btnStyle2]+'-dislike'" (click)="onDisLikeClick()" name="dislike">{{disLikeText}}</button>
 </div>
