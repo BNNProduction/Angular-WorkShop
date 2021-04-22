@@ -9,6 +9,7 @@ import { UserComponent } from './user/user.component';
 import { ReplaceWithDashPipe } from './replace-with-dash.pipe';
 import { ReplaceWithUpperCaseDotPipe } from './replace-with-upper-case-dot.pipe';
 import { RatingComponent } from './rating/rating.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { RatingComponent } from './rating/rating.component';
     UserComponent,
     ReplaceWithDashPipe,
     ReplaceWithUpperCaseDotPipe,
-    RatingComponent
+    RatingComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
@@ -25,6 +27,6 @@ import { RatingComponent } from './rating/rating.component';
     FormsModule
   ],
   providers: [],
-  bootstrap: [LoginComponent]
+  bootstrap: [MainComponent]
 })
 export class AppModule { }

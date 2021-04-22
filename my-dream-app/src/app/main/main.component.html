@@ -1,0 +1,17 @@
+<nav class='navbar navbar-expand navbar-light bg-light'>
+    <a class='navbar-brand'>{{pageTitle}}</a>
+    <ul class='nav nav-pills'> 
+    <li>
+          <a class='nav-link' routerLinkActive='active' [routerLink]="['/users']">Home </a>
+    </li>   
+    <li>
+          <a class='nav-link' routerLinkActive='active' [routerLink]="['/login-component']">List User </a>
+    </li>
+    <li>
+        <a class='nav-link' routerLinkActive='active' [routerLink]="['/app-component']">App Component</a>
+    </li>
+    </ul> 
+   </nav> 
+   <div class='container-fluid'>
+    <router-outlet></router-outlet>
+</div>
