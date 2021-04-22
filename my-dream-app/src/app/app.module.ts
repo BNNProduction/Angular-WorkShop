@@ -10,6 +10,7 @@ import { ReplaceWithDashPipe } from './replace-with-dash.pipe';
 import { ReplaceWithUpperCaseDotPipe } from './replace-with-upper-case-dot.pipe';
 import { RatingComponent } from './rating/rating.component';
 import { MainComponent } from './main/main.component';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { MainComponent } from './main/main.component';
     ReplaceWithDashPipe,
     ReplaceWithUpperCaseDotPipe,
     RatingComponent,
-    MainComponent
+    MainComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
