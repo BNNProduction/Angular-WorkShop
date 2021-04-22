@@ -1,1 +1,4 @@
-<p>quiz works!</p>
+<div>
+    <button [ngClass]="[btnStyle]" (click)="onLikeClick()" name="like">{{likeText}}</button>
+    <button [ngClass]="[btnStyle2]" (click)="onDisLikeClick()" name="dislike">{{disLikeText}}</button>
+</div>

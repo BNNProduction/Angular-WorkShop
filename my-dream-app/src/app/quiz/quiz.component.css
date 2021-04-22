@@ -1,0 +1,25 @@
+
+  .like-button-deactive {
+    font-size: 20px;
+    width: 10em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #0288d1;
+    background-color: white;
+    color: #666;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .like-button-active {
+    font-size: 20px;
+    width: 10em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #d10202;
+    background-color: rgb(29, 6, 231);
+    color: #666;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
