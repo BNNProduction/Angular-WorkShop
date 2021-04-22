@@ -10,6 +10,7 @@ export class LoginComponent implements OnInit {
 
   users: User[] = [];
 
+  result: String = "";
   constructor() {
   }
 
@@ -21,5 +22,8 @@ export class LoginComponent implements OnInit {
       new User(4, 'user 04', 'last 04', 'xxx@demo3.com',4.2),
     ];
   }
-
+  onClickRating(event: String): void{
+    console.log("Received data from "+ event)
+    this.result ="Received data from "+ event;
+  }
 }

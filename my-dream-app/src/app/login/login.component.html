@@ -6,7 +6,7 @@
         <th scope="col">Last name</th>
         <th scope="col">Email</th>
         <th scope="col">Rating</th>
-        <th scope="col">Default Rating</th>
+        <!-- <th scope="col">Default Rating</th> -->
       </tr>
     </thead>
     <tbody>
@@ -15,12 +15,16 @@
         <td>{{u.firstName}}</td>
         <td>{{u.lastName | replaceWithUpperCaseDot}} </td>
         <td>{{u.email}}</td>
-        <td>
+        <!-- <td>
             <app-rating [targetScore]=u.score></app-rating>   
-        </td>
+        </td>  -->
         <td>
-            <app-rating [targetScore]=u.score [isStar]=true></app-rating>   
+            <app-rating 
+              [targetScore]=u.score 
+              (ratingClicked)="onClickRating($event)"
+            ></app-rating>   
         </td>
       </tr>
     </tbody>
   </table>
+  <h2>{{result}}</h2>
