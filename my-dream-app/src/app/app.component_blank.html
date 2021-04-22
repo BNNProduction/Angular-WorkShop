@@ -1,4 +1,15 @@
-<div>BOBOOBUA</div>
-{{title}}
-<input type="text" (keyup)=onPress($event) />
+<h1>Hello world {{name}}</h1>
+<p>Working Step 1 ...</p>
+<input type="text" (keyup)="onPress($event)" >
 <p>{{result}}</p>
+<button (click)="doSth()" >DO sth</button>
+<p>Angular form</p>
+<input type="text" [(ngModel)]="username" name="username"  >
+<p>{{username}}</p>
+
+<p>My Task : </p>
+<ul>
+  <li *ngFor="let item of task">
+    {{item}}
+  </li>
+</ul>

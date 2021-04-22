@@ -7,9 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-dream-app';
-  result = "LOL";
-  onPress(event: any){
+  name = 'BoBooBua';
+  result = "Data...........";
+  data = ""
+  username = ""
+  task = ["Task 1","Task 2"]
+  doSth() {
+    console.log("Clicked ...");
+    this.result = "Change from clicked !!";
+  }
+
+  onPress(event: any) {
+    console.log(event.target.value);
     this.result = event.target.value;
   }
 }
