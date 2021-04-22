@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-dream-app';
+  result = "LOL";
+  onPress(event: any){
+    this.result = event.target.value;
+  }
 }
