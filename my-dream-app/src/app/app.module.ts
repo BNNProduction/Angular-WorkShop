@@ -8,6 +8,7 @@ import { LoginComponent } from './login/login.component';
 import { UserComponent } from './user/user.component';
 import { ReplaceWithDashPipe } from './replace-with-dash.pipe';
 import { ReplaceWithUpperCaseDotPipe } from './replace-with-upper-case-dot.pipe';
+import { RatingComponent } from './rating/rating.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ReplaceWithUpperCaseDotPipe } from './replace-with-upper-case-dot.pipe'
     LoginComponent,
     UserComponent,
     ReplaceWithDashPipe,
-    ReplaceWithUpperCaseDotPipe
+    ReplaceWithUpperCaseDotPipe,
+    RatingComponent
   ],
   imports: [
     BrowserModule,
